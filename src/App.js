@@ -10,7 +10,7 @@ class Home extends Component {
         <h1>Home</h1>
         <hr />
         <div>
-          <div className="col-6">
+          <div className="col-12">
             <ListData />
           </div>
         </div>

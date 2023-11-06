@@ -36,17 +36,17 @@ class Contact extends Component {
         </p>
 
         <form>
-          <div>
+          <div className='form-control'>
             <label htmlFor="name">Your Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" className='form-control'required />
           </div>
           <div>
             <label htmlFor="email">Email Address:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" className='form-control' required />
           </div>
           <div>
             <label htmlFor="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message" rows="4" className='form-control' required></textarea>
           </div>
           <button type="submit">Submit</button>
         </form>

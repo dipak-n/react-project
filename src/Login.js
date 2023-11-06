@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.css';
 
-class Login extends Component {
+class Login extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -70,39 +70,57 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="logincontainer">
-        <h1>Login</h1>
-        <div onClick={() => {
-          if(this.props.onClose){
-            this.props.onClose(true);
-          }
-        }} className="loginclose">X</div>
-        <div className="loginform">
-          <form onSubmit={this.OnSubmitLogin}>
-            <label>Email</label>
-            <input 
-              type="email" 
-              className="form-control" 
-              placeholder="example@example.com" 
-              name="email" 
-              value={this.state.user.email} 
-              onChange={this.handleChange}
-            />
-            <small className="errorMsg">{this.state.errors.email}</small>
-            <label>Password</label>
-            <input 
-              type="password" 
-              className="form-control" 
-              placeholder="password"
-              name="password" 
-              value={this.state.user.password} 
-              onChange={this.handleChange}
-            />
-            <small className="errorMsg">{this.state.errors.password}</small>
+      // <div className="logincontainer">
+      //   <h1>Login</h1>
+      //   <div onClick={() => {
+      //     if(this.props.onClose){
+      //       this.props.onClose(true);
+      //     }
+      //   }} className="loginclose">X</div>
+      //   <div className="loginform">
+      //     <form onSubmit={this.OnSubmitLogin}>
+      //       <label>Email</label>
+      //       <input 
+      //         type="email" 
+      //         className="form-control" 
+      //         placeholder="example@example.com" 
+      //         name="email" 
+      //         value={this.state.user.email} 
+      //         onChange={this.handleChange}
+      //       />
+      //       <small className="errorMsg">{this.state.errors.email}</small>
+      //       <label>Password</label>
+      //       <input 
+      //         type="password" 
+      //         className="form-control" 
+      //         placeholder="password"
+      //         name="password" 
+      //         value={this.state.user.password} 
+      //         onChange={this.handleChange}
+      //       />
+      //       <small className="errorMsg">{this.state.errors.password}</small>
             
-            <input type="submit" className="btn"  value="Login"/> 
-          </form>
-        </div>
+      //       <input type="submit" className="btn"  value="Login"/> 
+      //     </form>
+      //   </div>
+      // </div>
+      <div>
+        <h2>Login</h2>
+        <input className='form-control'
+          type="email"
+          placeholder="Email"
+          value={this.state.email}
+          onChange={(e) => this.setState({ email: e.target.value })}
+        />
+        <input className='form-control'
+          type="password"
+          placeholder="Password"
+          value={this.state.password}
+          onChange={(e) => this.setState({ password: e.target.value })}
+        />
+        <button className='save-btn' onClick={this.handleLogin}>Login</button>
+        <h2>Sign Up</h2>
+        <button className='cancel-btn' onClick={this.handleSignUp}>Sign Up</button>
       </div>
     );
   }

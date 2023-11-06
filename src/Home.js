@@ -14,7 +14,7 @@ class Home extends Component {
           {/* <div className="col-6">
             <SimpleSlider />
           </div> */}
-          <div className="col-6">
+          <div className="col-12">
             <ListData />
           </div>
         </div>

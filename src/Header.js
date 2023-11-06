@@ -46,11 +46,17 @@ class Header extends Component {
               <li>
                 <NavLink to="/listview" exact activeStyle={{ color: '#2a6496' }}>List View</NavLink>
               </li>
-              <li><a className="cursor" onClick={this.loginForm}>Login</a></li>
+              <li>
+              <NavLink to="/login" exact activeStyle={{ color: '#2a6496' }}>Login</NavLink>
+                {/* <a className="cursor" onClick={this.loginForm}></a> */}
+              </li>
+              <li>
+                <NavLink to="/auth" exact activeStyle={{ color: '#2a6496' }}>Auth</NavLink>
+              </li>
             </ul>
           </div>
-          <div className="clear"></div>
-          {showLoginForm ? <Login onClose={this.loginClose} /> : null}
+          {/* <div className="clear"></div>
+          {showLoginForm ? <Login onClose={this.loginClose} /> : null} */}
         </div>
       </div>
     );

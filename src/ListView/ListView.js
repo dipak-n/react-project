@@ -15,7 +15,7 @@ class ListView extends React.Component {
       description: 'VC FlexLight Jersey with spot sublimated Team Canada 2017 logo, from our Team Canada Collection.',
       price: 34.95,
       count: 12,
-      img: 'https://cdn.shopify.com/s/files/1/0340/2849/products/TC2017_LS_Mens_grande.jpg?v=1485541617',
+      img: './about-us/about-us-buildings.png',
     }, {
       id: 1,
       name: 'TC 2017 Shorts',
