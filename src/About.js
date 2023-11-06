@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.css';
 import '../src/about.css';
 import aboutUsBuildings from './about-us/about-us-buildings.png';

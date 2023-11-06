@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style.css';
 import ListDataLi from './ListDataLi';
 import AddList from './AddList'
@@ -45,7 +45,7 @@ class ListData extends React.Component {
     let formIsValid = true;
 
     //Name
-    if (name == "") {
+    if (name === "") {
       formIsValid = false;
       errors["name"] = "*Please enter your name.";
     }
@@ -58,7 +58,7 @@ class ListData extends React.Component {
     }
 
     // Age
-    if (age == "") {
+    if (age === "") {
       formIsValid = false;
       errors["age"] = "*Please enter your age.";
     }
@@ -85,12 +85,12 @@ class ListData extends React.Component {
 
     //alert(name)
     //Name
-    if (name == "" || name == undefined) {
+    if (name === "" || name === undefined) {
       formIsValid = false;
       errors["name"] = "*Please enter your name.";
     }
 
-    if (name != undefined) {
+    if (name !== undefined) {
       if (!name.match(/^[a-zA-Z ]*$/)) {
         formIsValid = false;
         errors["name"] = "*Please enter alphabet characters only.";
@@ -98,12 +98,12 @@ class ListData extends React.Component {
     }
 
     //Age
-    if (age == "" || age == undefined) {
+    if (age === "" || age === undefined) {
       formIsValid = false;
       errors["age"] = "*Please enter your age.";
     }
 
-    if (age != undefined) {
+    if (age !== undefined) {
       if (!age.match(/^\d+/)) {
         formIsValid = false;
         errors["age"] = "*Please enter Numbers only.";

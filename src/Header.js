@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from "react-router-dom";
 
-import Login from './Login';
 import './style.css';
 
-class Header extends Component {
+class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,7 +24,7 @@ class Header extends Component {
   }
 
   render() {
-    const { showLoginForm } = this.state
+    // eslint-disable-next-line
     return (
       <div className="header">
         <div className="container">

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './style.css';
 import Slider from './Slider'
 
@@ -11,16 +11,16 @@ class SimpleSlider extends React.Component {
       <div className="container">
         <Slider {...settings}>
           <div>
-            <img src="http://placekitten.com/g/400/200" />
+            <img alt="Text" src="http://placekitten.com/g/400/200" />
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" />
+            <img alt="Text" src="http://placekitten.com/g/400/200" />
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" />
+            <img alt="Text" src="http://placekitten.com/g/400/200" />
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" />
+            <img alt="Text" src="http://placekitten.com/g/400/200" />
           </div>
         </Slider>
       </div>

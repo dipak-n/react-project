@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style.css';
 
 class ListDetail extends React.Component {
@@ -7,7 +7,7 @@ class ListDetail extends React.Component {
     return (
       <div className="list_detail">
         <h4>List Detail</h4>
-        <img className="img-responsive" />
+        <img alt='text' className="img-responsive" />
         
       </div>
     );

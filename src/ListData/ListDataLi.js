@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style.css';
 
 class ListDataLi extends React.Component {
@@ -10,9 +10,9 @@ class ListDataLi extends React.Component {
           old!
         </p>
         <div className='my-3'>
-          <a href="#" onClick={this.props.click} className="badge">
+          <span onClick={this.props.click} className="badge">
             Delete
-          </a>
+          </span>
         </div>
       </li>
     );
